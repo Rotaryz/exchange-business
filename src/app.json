@@ -1,0 +1,143 @@
+{
+  "pages": [
+    "pages/home",
+    "pages/brand",
+    "pages/login",
+    "pages/page-missing",
+    "pages/error-page",
+    "pages/pay-success",
+    "pages/out-html",
+    "pages/submit-order",
+    "pages/goods-detail",
+    "pages/goods-classify",
+    "pages/error",
+    "pages/goods-search",
+    "pages/mine",
+    "pages/shopping-cart"
+  ],
+  "subPackages": [
+    {
+      "root": "package-active/",
+      "pages": [
+        "share-choice",
+        "share-edit",
+        "share-list",
+        "service-select",
+        "activity-edit",
+        "activity",
+        "wheel-edit-select",
+        "wheel-edit",
+        "service",
+        "service-edit"
+      ]
+    },
+    {
+      "root": "package-other/",
+      "pages": [
+        "ai-log",
+        "terms-service"
+      ]
+    },
+    {
+      "root": "package-brand/",
+      "pages": [
+        "brand-content",
+        "brand-detail"
+      ]
+    },
+    {
+      "root": "package-shopManage/",
+      "pages": [
+        "setting",
+        "verify",
+        "recharge",
+        "member-manage",
+        "exchange-order",
+        "edit-goods",
+        "goods-manage"
+      ]
+    },
+    {
+      "root": "package-personalCenter/",
+      "pages": [
+        "service-order-detail",
+        "service-order",
+        "shop-income",
+        "personal-settings",
+        "level-upgrade",
+        "successful-application",
+        "enterprise-user-detail",
+        "enterprise-user-management",
+        "log-subsidy",
+        "property",
+        "log-deposit",
+        "bind-card",
+        "apply-deposit",
+        "my-address",
+        "new-address",
+        "account-information",
+        "improving-data",
+        "order-detail",
+        "logistics-infomation",
+        "order-list"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/mine": {
+      "network": "all",
+      "packages": [
+        "package-personalCenter/",
+        "package-active/"
+      ]
+    },
+    "pages/home": {
+      "network": "all",
+      "packages": [
+        "package-other/"
+      ]
+    }
+  },
+  "window": {
+    "backgroundColor": "#F5F5F9",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#3F454B",
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "#D33B32",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "礼品馆",
+        "pagePath": "pages/home",
+        "iconPath": "static/tabs/icon-gift.png",
+        "selectedIconPath": "static/tabs/icon-gift_pressed.png"
+      },
+      {
+        "text": "品牌馆",
+        "pagePath": "pages/brand",
+        "iconPath": "static/tabs/icon-brand.png",
+        "selectedIconPath": "static/tabs/icon-brand_pressed.png"
+      },
+      {
+        "text": "购物车",
+        "pagePath": "pages/shopping-cart",
+        "iconPath": "static/tabs/icon-shopcar.png",
+        "selectedIconPath": "static/tabs/icon-shopcar_pressed.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/mine",
+        "iconPath": "static/tabs/icon-my.png",
+        "selectedIconPath": "static/tabs/icon-my_pressed.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "navigateToMiniProgramAppIdList": ["wxbebabb5eb8a0b7b3"]
+}

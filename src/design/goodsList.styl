@@ -1,0 +1,72 @@
+// 商品列表
+@import './price.styl'
+.goods-ul
+  display flex
+  flex-wrap wrap
+  padding: 10px 3px 0px 10px
+
+  .goods-item
+    width: 50%
+    padding-right: 7px
+    padding-bottom: 7px
+    box-sizing border-box
+
+    .goods-item-wrap
+      background-color $color-white
+      border-radius 2px
+      position relative
+
+      .img-wrap
+        width: 100%
+        padding-top: 100%
+        position relative
+        border-radius: 2px 2px 0px 0px
+        .goods-img
+          position absolute
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
+          width: 100%
+          height: 100%
+          border-radius: 2px 2px 0px 0px
+          .goods-none
+            background: rgba(255, 255, 255, 0.6)
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            .goods-none-img
+              width: 59px
+              height: 59px
+      .info-wrap
+        padding: 7px 10px 4px
+
+
+      .info-wrap
+        padding: 7px 10px 12px
+
+      .title
+        font-family $font-family-regular
+        font-size $font-size-14
+        color: $color-text-main
+        line-height 20px
+        height :40px
+        text-align:left
+        no-wrap-plus()
+        margin-bottom: 7px
+
+//.shopping-cart-icon
+//  position: absolute
+//  right: 0
+//  bottom: 0
+//  padding: 11px 17px
+//  border-width: 0
+//
+//.add-cart
+//  width: 25px
+//  height: @width

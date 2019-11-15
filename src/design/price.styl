@@ -1,0 +1,54 @@
+// 店鋪等級价格样式
+.price-wrap
+  display flex
+  justify-content space-between
+  align-items flex-end
+
+.price-item
+  margin-bottom 7px
+  display:flex
+  align-items flex-end
+.price-item:last-child
+    margin-bottom 0
+.price-icon
+  box-sizing border-box
+  width:46px
+  height:16px
+  line-height:17px
+  background-size 100% 100%
+  border-radius: 2px
+  padding-left:17px
+  font-size:$font-size-10
+  &.bz-icon
+    color:#272727
+    background-image url("~@style/icons/icon-biao@2x.png")
+  &.hh-icon
+    color:#F8E2B2
+    background-image url("~@style/icons/icon-he@2x.png")
+  &.qn-icon
+    color:#71392C
+    background-image url("~@style/icons/icon-quan@2x.png")
+.price-num
+  font-family $font-family-medium
+  font-size:$font-size-14
+  margin-left:5px
+.common-price
+  font-size:$font-size-11
+  color:$color-text-secondary
+  text-decoration line-through
+//   商品详情
+.price-item.big
+  .price-icon
+    height:20px
+    line-height:21px
+    width:58px
+    padding-left:21px
+    font-size:$font-size-13
+  .bz-icon
+    background-image url("~@style/icons/icon-biao2@2x.png")
+  .hh-icon
+    background-image url("~@style/icons/icon-he2@2x.png")
+  .qn-icon
+    background-image url("~@style/icons/icon-quan2@2x.png")
+  .price-num
+    font-size $font-size-16
